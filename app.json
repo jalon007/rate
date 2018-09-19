@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/salary/rate",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "backgroundTextStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "Finance"
+  }
+}
