@@ -48,7 +48,7 @@
       <view class="weui-cell weui-cell-title">五险一金汇缴明细</view>
   </view>   
   <view class="table">
-    <view class="weui-flex">
+    <view class="weui-flex th">
       <view class="weui-flex__item">
         <view class="placeholder">类型</view>
       </view>

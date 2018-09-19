@@ -98,3 +98,7 @@ border: 1rpx solid #0288aa;
 .table{
   background: #ffffff
 }
+.th {
+  font-weight: 400;
+  background-color: #dadada;
+}
