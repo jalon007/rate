@@ -15,7 +15,7 @@ Page({
       { name: '0', value: '免征额3500'},
       { name: '1', value: '免征额5000', checked: 'true'}
     ],
-    itemIndex:0,
+    itemIndex:1,
     datas: [
       {
         city: "北京",
