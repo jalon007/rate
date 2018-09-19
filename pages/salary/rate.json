@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "薪资计算器",
-  "navigationBarBackgroundColor": "#0295ba"
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle":"black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor":"#ffffff"
 }

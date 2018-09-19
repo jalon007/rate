@@ -53,3 +53,45 @@ radio .wx-radio-input.wx-radio-input-checked::before{
 background-color: #0295ba;
 border: 1rpx solid #0295ba;
 }
+.weui-btn-share{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20rpx;
+  right: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 26rpx;
+  background: rgb(168, 168, 168);
+}
+.weui-btn-xiu{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20rpx;
+  right: 150rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 26rpx;
+  background: rgb(222, 247, 234);
+}
+.weui-btn{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20rpx;
+  right: 160rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 28rpx;
+  background-color: #00afdb;
+}

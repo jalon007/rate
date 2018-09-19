@@ -12,8 +12,8 @@ Page({
     grsds: '_',
     shxinzi: '_',
     items: [
-      { name: '0', value: '免征额3500', checked: 'true' },
-      { name: '1', value: '免征额5000'}
+      { name: '0', value: '免征额3500'},
+      { name: '1', value: '免征额5000', checked: 'true'}
     ],
     itemIndex:0,
     datas: [
@@ -86,7 +86,7 @@ Page({
       },
       {
         city: "上海",
-        shebao: { min: 3902, max: 19512 },
+        shebao: { min: 4279, max: 21396 },
         gjj: { min: 2190, max: 19512 },
         detail: [
           {
@@ -154,8 +154,8 @@ Page({
       },
       {
         city: "广州",
-        shebao: { min: 3902, max: 19512 },
-        gjj: { min: 2190, max: 19512 },
+        shebao: { min: 3469, max: 24654 },
+        gjj: { min: 2100, max: 24654 },
         detail: [
           {
             name: "养老保险",
@@ -222,8 +222,8 @@ Page({
       },
       {
         city: "深圳",
-        shebao: { min: 2130, max: 20259 },
-        gjj: { min: 2130, max: 33765 },
+        shebao: { min: 5008, max: 25044 },
+        gjj: { min: 2130, max: 25044 },
         detail: [
           {
             name: "养老保险",
@@ -328,7 +328,6 @@ Page({
     this.data.personTotal = this.data.personTotal.toFixed(2);
     this.data.companyTotal = this.data.companyTotal.toFixed(2);
     var ynsxinzi = this.data.xinzi > this.data.personTotal ? (this.data.xinzi - this.data.personTotal).toFixed(2) : this.data.xinzi;
-    console.log("this.")
     var rate = this.data.itemIndex == 0 ? this.get_rate_old(ynsxinzi).toFixed(2):this.get_rate(ynsxinzi).toFixed(2);
     this.setData({
       datas: this.data.datas,
@@ -413,15 +412,29 @@ Page({
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     this.setData({ itemIndex: itemIndex});
   },
-  onShareAppMessage: function () {
+  onLoad: function (e) {
+    wx.showShareMenu({
+      // 要求小程序返回分享目标信息
+      withShareTicket: true
+    });
+  },
+  onShareAppMessage: function (ops) {
+    if (ops.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(ops.target)
+    }
     return {
-      title: '薪资计算器',
+      title: '不服来战~^@^~',
       path: '/pages/salary/rate',
       success: function (res) {
         // 转发成功
+        console.log("转发成功:" + JSON.stringify(res));
+        var shareTickets = res.shareTickets;
       },
       fail: function (res) {
         // 转发失败
+        console.log("转发失败:" + JSON.stringify(res));
+
       }
     }
   }

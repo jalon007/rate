@@ -46,7 +46,7 @@
       <view class="weui-cell__bd warn-tail">区间：{{datas[cityIndex].gjj.min}}~{{datas[cityIndex].gjj.max}}</view>
     </view>
   </view>
-  <view class="page__bd page__bd_spacing table">
+  <view class=" page__bd_spacing table">
    <view class="weui-cell weui-cell-title">五险一金汇缴明细</view>
     <view class="weui-flex">
       <view class="weui-flex__item">
@@ -106,8 +106,6 @@
     <view class="weui-flex">
     </view>
     <view class="weui-flex">
-    </view>
-    <view class="weui-flex">
       <view class="weui-flex__item">
         <view class="placeholder">结果仅供参考</view>
       </view>
@@ -115,5 +113,6 @@
   </view>
   <view class="weui-btn-area">
     <button class="weui-btn" type="primary" bindtap="calculate" style='background-color:#0295ba'>计算</button>
+    <button open-type="share" class='weui-btn-share'>分享</button>
   </view>
 </view>
