@@ -424,7 +424,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      title: '不服来战~^@^~',
+      title: '实用小工具分享给大家~^@^~',
       path: '/pages/salary/rate',
       success: function (res) {
         // 转发成功
