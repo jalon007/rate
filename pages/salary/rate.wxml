@@ -13,7 +13,7 @@
       <view class="weui-cell weui-cell_input">
   <view class="weui-cell__hd">
  <radio-group bindchange="radioCheckedChange"> 
-   <view class="flex_item"> 免征额：
+   <view class="flex_item"><view class="weui-label">免征额</view>
     <label class="{{radioCheckVal==0?'active':''}}">3500 
      <radio value="0"  hidden="true"></radio> 
     </label> 
@@ -119,5 +119,6 @@
   <view class="weui-btn-area">
     <button class="weui-btn" type="primary" bindtap="calculate" style='background-color:#0295ba'>计算</button>
     <button open-type="share" class='weui-btn-share'>分享</button>
+    <!-- <button open-type="share" class='weui-btn-show'>show</button> -->
   </view>
 </view>

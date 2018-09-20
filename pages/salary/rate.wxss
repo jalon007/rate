@@ -65,21 +65,21 @@ border: 1rpx solid #0288aa;
   height: 120rpx;
   border-radius: 50%;
   font-size: 26rpx;
-  background: rgb(168, 168, 168);
+  background: rgba(0, 0, 0, 0.514);
 }
-.weui-btn-xiu{
+.weui-btn-show{
   color: #ffffff;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 20rpx;
+  bottom: 180rpx;
   right: 150rpx;
   width: 120rpx;
   height: 120rpx;
   border-radius: 50%;
   font-size: 26rpx;
-  background: rgb(222, 247, 234);
+  background: rgb(110, 111, 114);
 }
 .weui-btn{
   color: #ffffff;
