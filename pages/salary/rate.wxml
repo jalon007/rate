@@ -10,13 +10,18 @@
         </picker>
       </view>
     </view>
-  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell weui-cell_input">
   <view class="weui-cell__hd">
-      <radio-group  bindchange="radioChange">
-      <radio class="radio" style='width:130px;padding:8px 0' wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
-      <text>{{item.value}}</text>
-      </radio>
-      </radio-group>
+ <radio-group bindchange="radioCheckedChange"> 
+   <view class="flex_item"> 免征额：
+    <label class="{{radioCheckVal==0?'active':''}}">3500 
+     <radio value="0"  hidden="true"></radio> 
+    </label> 
+    <label class="{{radioCheckVal==1?'active':''}}">5000 
+     <radio value="1" hidden="true"></radio> 
+    </label> 
+   </view>
+ </radio-group> 
  </view>
  </view>
      <view class="weui-cell weui-cell_input">
@@ -24,7 +29,7 @@
         <view class="weui-label">税前薪资</view>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" type="digit" value="{{xinzi}}" bindblur="changeXinzi" placeholder="请输入税前薪资" />
+        <input class="weui-input" type="number" maxlength="10" value="{{xinzi}}" bindblur="changeXinzi" placeholder="请输入税前薪资" />
       </view>
     </view>
     <view class="weui-cell weui-cell_input">
