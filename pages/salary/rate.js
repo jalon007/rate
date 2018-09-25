@@ -13,6 +13,7 @@ Page({
     shxinzi: '_',
     itemIndex:1,
     radioCheckVal: 1,
+    showModal: true,
     datas: [
       {
         city: "北京",
@@ -440,5 +441,9 @@ Page({
 
       }
     }
+  } , iknow: function () {
+    this.setData({
+      showModal: false
+    })
   }
 });

@@ -122,3 +122,13 @@
     <!-- <button open-type="share" class='weui-btn-show'>show</button> -->
   </view>
 </view>
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="fuceng">
+        <view class='fuceng-text'>点击左上角 ●●● </view>
+        <view  class='fuceng-text' style='color:red;'>~「添加到我的小程序」</view>
+        <text  class='fuceng-text'>可作为常用工具哦！</text>
+  </view>
+  <button class='fuceng-button' bindtap="iknow">我知道了</button>
+  </view>

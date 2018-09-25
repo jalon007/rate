@@ -128,3 +128,41 @@ margin-right: 10px;
  background-color: #0288aa;
  color: #ffffff;
 }
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(92, 91, 91);
+    z-index: 9000;
+    opacity: 0.7;
+}
+ 
+.modalDlg{
+    width: 530rpx;
+    height: 440rpx;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    margin: -370rpx 100rpx;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 36rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fuceng{
+  padding: 20rpx;
+}
+.fuceng-text{
+  padding-top: 20rpx;
+  padding-bottom: 25rpx;
+}
+.fuceng-button{
+  background-color: #0288aa;
+border-radius: 36rpx;
+font-size: 15px;
+}
