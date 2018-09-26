@@ -4,6 +4,8 @@
     "pages/fang/fang",
     "pages/fang/detail/detail",
     "pages/logs/logs",
+    "pages/rmb/rmb",
+    "pages/car/car",
     "pages/more/more"
   ],
   "window": {
@@ -31,6 +33,13 @@
         "iconPath": "images/fang_h.png",
         "selectedIconPath": "images/fang.png",
         "text": "房贷"
+      },
+      
+      {
+        "pagePath": "pages/rmb/rmb",
+        "iconPath": "images/rmb_h.png",
+        "selectedIconPath": "images/rmb.png",
+        "text": "人民币"
       },
       {
         "pagePath": "pages/more/more",
