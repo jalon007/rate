@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/salary/rate",
-    "pages/mortgage/mortgage",
-    "pages/mortgage/detail/detail",
+    "pages/fang/fang",
+    "pages/fang/detail/detail",
     "pages/logs/logs",
     "pages/more/more"
   ],
@@ -27,7 +27,7 @@
         "text": "薪资"
       },
       {
-        "pagePath": "pages/mortgage/mortgage",
+        "pagePath": "pages/fang/fang",
         "iconPath": "images/fang_h.png",
         "selectedIconPath": "images/fang.png",
         "text": "房贷"
