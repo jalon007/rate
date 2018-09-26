@@ -1,13 +1,43 @@
 {
   "pages": [
     "pages/salary/rate",
-    "pages/logs/logs"
+    "pages/mortgage/mortgage",
+    "pages/mortgage/detail/detail",
+    "pages/logs/logs",
+    "pages/more/more"
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarBackgroundColor": "#0288aa",
     "backgroundTextStyle": "black",
     "backgroundColor": "#f8f8f8",
     "navigationBarTitleText": "Finance"
+  }
+  ,
+  "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#0288aa",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/salary/rate",
+        "iconPath": "images/rate_h.png",
+        "selectedIconPath": "images/rate.png",
+        "text": "薪资"
+      },
+      {
+        "pagePath": "pages/mortgage/mortgage",
+        "iconPath": "images/fang_h.png",
+        "selectedIconPath": "images/fang.png",
+        "text": "房贷"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "images/more_h.png",
+        "selectedIconPath": "images/more.png",
+        "text": "更多"
+      }
+    ]
   }
 }
