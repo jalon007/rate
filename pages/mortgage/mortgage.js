@@ -2,12 +2,12 @@ var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 
 Page({
   data: {
-    commercialTotal: 1000000,
-    gjjTotal: 500000,
+    commercialTotal: '',
+    gjjTotal: '',
 
     tabs: ["商业贷款", "公积金贷款", "组合贷款"],
     activeIndex: 0,
-    loansType: ['按房价总额', '按贷款总额'],
+    loansType: ['房价总额', '贷款总额'],
     loanIndex: 0,
     ratesName: [
       ['基准利率（4.9%）', '基准利率7折（3.43%）', '基准利率75折（3.68%）', '基准利率8折（3.92%）',
