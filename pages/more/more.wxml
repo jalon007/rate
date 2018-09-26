@@ -1,0 +1,8 @@
+<view class="page">
+
+  <view class="more">
+          <view class='more-title'>声明</view>
+        <view class='more-text'>本计算类小工具为学习开发，供大家计算五险一金、税后薪资、住房商业贷款及公积金贷款，不作为任何商业用途！计算结果仅做参考，不保证绝对准确。</view>
+        <view  class='more-text' style='color:red;'>更多实用小工具敬请期待…</view>
+  </view>
+  </view>

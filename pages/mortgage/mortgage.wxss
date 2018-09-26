@@ -1,0 +1,86 @@
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    /* padding-top: 15px; */
+}
+.page__desc {
+  text-indent: 2em;
+  color: red;
+}
+.weui-btn-share{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20rpx;
+  right: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 26rpx;
+  background: rgba(0, 0, 0, 0.514);
+}
+.weui-btn-show{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 180rpx;
+  right: 150rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 26rpx;
+  background: rgb(110, 111, 114);
+}
+.weui-btn{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20rpx;
+  right: 160rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  font-size: 28rpx;
+  background-color: #00afdb;
+}
+.weui-navbar__item.weui-bar__item_on {
+border:1px solid #0288aa;
+background-color:#0288aa;
+color:#ffffff;
+}
+.weui-navbar__item.active{
+border:1px solid #0288aa;
+background-color:#0288aa;
+color:#ffffff;
+
+}
+.weui-navbar__item{
+padding:2px 8px;
+border-radius:15px;
+border:1px solid #808080;
+display:inline-block;
+font-size:12px;
+margin-right:15px;
+}
+
+.weui-flex {
+  padding: 5px 0;
+}
+.weui-flex:last-child {
+padding-top:10px;
+font-size:12px;
+color:#353535;
+text-align: center;
+}

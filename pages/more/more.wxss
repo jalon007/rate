@@ -1,0 +1,15 @@
+.more{
+  padding: 40rpx;
+}
+.more-text{
+  padding-top: 20rpx;
+  padding-bottom: 25rpx;
+  font-size: 15px;
+  text-indent:2em;
+}
+.more-title{
+text-align: center;
+font-size: 20px;
+  padding-top: 20rpx;
+  padding-bottom: 25rpx;
+}
