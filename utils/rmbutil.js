@@ -1,26 +1,9 @@
-/**
- * @file util.js 功能函数模块
- * @author Angela-1 <ruoshui_engr@163.com>
- * 本文件是圆角分Angela的一部分。
- *
- * © 2017-2018 Angela 版权所有。开源仅用于学术交流分享，商业使用请联系作者。
- */
-
 'use strict'
 
-/**
- * 是否允许输入小数点 
- */
 let allow_point = true
-
-/**
- * 输入数字长度限制为最长12位
- */
+let allow_point_len = 3
 let limit_len = 12
 
-/**
- * 用户输入时判断是否符合输入要求
- */
 function updateInput(lastChar, oldStr) {
   let newStr = oldStr
   let current_len = oldStr.length
@@ -29,16 +12,14 @@ function updateInput(lastChar, oldStr) {
       if (allow_point) {
         // 判断点号前的输入为空即输入了'0'的时候
         if (oldStr === '') {
-          // 在前面补充'0'
           oldStr = '0'
-          // 字符长度加1
           current_len += 1
         }
         newStr = oldStr + lastChar
-        // 允许输入置为false，只能输入一个小数点
+        //只能输入一个小数点
         allow_point = false
         // 输入小数点后的长度限制为当前长度加3，即小数点加两位小数
-        limit_len = current_len + 3
+        limit_len = current_len + allow_point_len
       }
       break
     case '0':
@@ -77,6 +58,7 @@ function updateInputBack(lastChar, oldStr) {
 function reset() {
   limit_len = 12
   allow_point = true
+  allow_point_len = 3
 }
 
 export {

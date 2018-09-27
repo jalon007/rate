@@ -140,10 +140,10 @@ export default class Currency {
 
     result.push(restr)
 
-    if (restr.indexOf('分') === -1 &&
-      decSection['isZero'] === false) {
-      result.push('整')
-    }
+    // if (restr.indexOf('分') === -1 &&
+    //   decSection['isZero'] === false) {
+    //   result.push('整')
+    // }
 
     let upperText = ''
     for (let r in result) {
