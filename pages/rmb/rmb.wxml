@@ -5,18 +5,19 @@
   <!-- user -->
   <view class="user" animation="{{animationTitle}}">
       <view class="user-number" bindtap="bindShowMask">
-      
         <text class="user-number-tip">{{numStr}}</text>
          <text class="cursor user-number-str" hidden="{{!mask}}">|</text> 
       </view>
-      <view class="user-chn layout horizontal center" >
-        <text class="user-chn-str">{{chnStr}}</text>
-        <!-- <view class="flex"></view> -->
-       <view class="weui-btn-area">
+             <view class="">
         <button class="weui-btn" type="primary" wx:if="{{chnStr}}" bindtap="bindCopy" style='background-color:#0295ba'>复制    </button>
         <button class='weui-btn-share' wx:if="{{chnStr}}" bindtap='bindAddToList'>暂存</button>
         <!-- <button open-type="share" class='weui-btn-share'>分享</button> -->
       </view>
+      <view class="hline" hidden="{{!mask}}"></view>
+      <view class="user-chn layout horizontal center" >
+        <text class="user-chn-str">{{chnStr}}</text>
+        <!-- <view class="flex"></view> -->
+
       </view>
 
   </view>
@@ -27,28 +28,34 @@
   <!-- keyboard -->
   <view class="keyboard">
     <view class="layout vertical" wx:if="{{kbd}}" animation="{{animationKbd}}">
+     
       <view class="layout horizontal">
         <button data-kw="1" bindtap="bindInputNum" class="flex button-number">1</button>
         <button data-kw="2" bindtap="bindInputNum" class="flex button-number">2</button>
         <button data-kw="3" bindtap="bindInputNum" class="flex button-number">3</button>
+        <button bindtap="bindCloseMask" class="flex button-str">
+        <image class="icon" src="../../images/closekbd.png" mode="aspectFill"></image>
+
+        </button>
       </view>
       <view class="layout horizontal">
         <button data-kw="4" bindtap="bindInputNum" class="flex button-number">4</button>
         <button data-kw="5" bindtap="bindInputNum" class="flex button-number">5</button>
         <button data-kw="6" bindtap="bindInputNum" class="flex button-number">6</button>
+        <button data-kw="del" bindtap="bindBackspace" class="flex button-str">
+        <image class="icon" src="../../images/back.png" mode="aspectFill"></image></button>
       </view>
       <view class="layout horizontal">
         <button data-kw="7" bindtap="bindInputNum" class="flex button-number">7</button>
         <button data-kw="8" bindtap="bindInputNum" class="flex button-number">8</button>
         <button data-kw="9" bindtap="bindInputNum" class="flex button-number">9</button>
+       <button bindtap="bindClear" class="flex button-str">C</button>
       </view>
       <view class="layout horizontal">
         <button data-kw="." bindtap="bindInputNum" class="flex button-number">.</button>
         <button data-kw="0" bindtap="bindInputNum" class="flex button-number">0</button>
-        <button data-kw="del" bindtap="bindBackspace" class="flex button-str">
-        <image class="icon" src="../../images/back.png" mode="aspectFill"></image>
-
-        </button>
+        <button bindtap="" class="flex button-str"></button>
+        <button  open-type="share" class="flex button-str">分享</button>
       </view>
     </view>
 
@@ -60,9 +67,9 @@
     <view class="result-list">
       <block wx:for="{{resultList}}" wx:for-item="re" wx:key="{{index+re}}">
         <view class="result-card" style="{{re.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+
           <view class="result-item num">{{re.num}}</view>
           <view class="result-item chn">{{re.chn}}</view>
-          <view>复制</view>
         </view>
       </block>
     </view>

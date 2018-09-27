@@ -30,7 +30,6 @@ Page({
   },
   bindCloseMask() {
     reset()
-    this._showCaption()
     this._animationHideKbd()
     this.setData({
       numStr: "请输入数字金额",

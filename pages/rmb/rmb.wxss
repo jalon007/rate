@@ -30,7 +30,7 @@
 }
 
 .user-number-tip {
-  font-size: 60rpx;
+  font-size: 50rpx;
 }
 .user-number-tip:focus {
   border: 1px solid rgb(225, 65, 65);
@@ -50,14 +50,15 @@
 }
 
 .hline {
-  border-bottom: 2rpx solid #b2b2b2;
+  border-bottom: 2rpx solid #0288aa;
+  margin-right:280rpx;
 }
 
 .user-chn {
   font-size: 60rpx;
   padding: 20rpx 20rpx;
   min-height: 132rpx;
-  color: #d40000da;
+  color: #ff0202;
 }
 
 .user-chn .icon {
@@ -129,7 +130,7 @@ margin-bottom:0;
   background-color: #6bcbe444;
   margin: 20rpx;
   padding: 10rpx 20rpx;
-  box-shadow: 4rpx 4rpx 4rpx #ccc;
+  box-shadow: 10rpx 10rpx 10rpx rgb(180, 180, 180);
   border-radius: 20px;
 }
 
