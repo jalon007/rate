@@ -11,7 +11,7 @@ Page({
   data: {
     mask: false,
     kbd: false,
-    numStr: '点按输入金额',
+    numStr: '请输入数字金额',
     chnStr: '',
     resultList: [],
     timeoutHandler: 0,
@@ -33,14 +33,14 @@ Page({
     this._showCaption()
     this._animationHideKbd()
     this.setData({
-      numStr: "点按输入金额",
+      numStr: "请输入数字金额",
       chnStr: "",
       mask: false
     })
   },
   bindClearList(e) {
     this.setData({
-      numStr: "点按输入金额",
+      numStr: "请输入数字金额",
       chnStr: "",
       resultList: []
     })
@@ -85,16 +85,10 @@ Page({
     wx.setClipboardData({
       data: self.data.chnStr,
       success: function (res) {
-        wx.showModal({
-          title: '提示',
-          content: '复制成功',
-          success: function (res) {
-            if (res.confirm) {
-              console.log('确定')
-            } else if (res.cancel) {
-              console.log('取消')
-            }
-          }
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 2000
         })
       }
     });

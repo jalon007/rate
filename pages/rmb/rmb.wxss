@@ -1,10 +1,13 @@
 /* pages/r2/r2.wxss */
 @import '/assets/layout.wxss';
+.container{
+    background-color: white;
+}
 .user {
   width: 100%;
   background-color: white;
-  box-shadow: 4rpx 4rpx 4rpx #ccc;
   z-index: 12;
+  padding: 10px;
 }
 
 .caption {
@@ -16,7 +19,7 @@
 }
 
 .user-number {
-  color: #888888;
+  color: #5e5c5c;
   padding: 20rpx 20rpx;
   z-index: 10;
 }
@@ -51,7 +54,7 @@
   font-size: 60rpx;
   padding: 20rpx 20rpx;
   min-height: 132rpx;
-  color: #353535;
+  color: #d40000da;
 }
 
 .user-chn .icon {
@@ -120,10 +123,11 @@ margin-bottom:0;
 .result-card {
   position: relative;
   /* animation: leftmove 0.5s;    */
-  background-color: white;
+  background-color: #6bcbe444;
   margin: 20rpx;
   padding: 10rpx 20rpx;
   box-shadow: 4rpx 4rpx 4rpx #ccc;
+  border-radius: 20px;
 }
 
 .result-card .result-item {
@@ -137,7 +141,7 @@ margin-bottom:0;
 }
 
 .result-card .chn {
-  color: #353535;
+  color: #d40000da;
   font-size: 60rpx;
 }
 
@@ -173,20 +177,6 @@ margin-bottom:0;
   }
 }
 
-.weui-btn-share{
-  color: #ffffff;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 320rpx;
-  right: 20rpx;
-  width: 120rpx;
-  height: 120rpx;
-  border-radius: 50%;
-  font-size: 26rpx;
-  background: rgba(0, 0, 0, 0.514);
-}
 .weui-btn-show{
   color: #ffffff;
   position: fixed;
@@ -207,11 +197,28 @@ margin-bottom:0;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 320rpx;
-  right: 160rpx;
-  width: 120rpx;
-  height: 120rpx;
+  top: 50rpx;
+  right: 140rpx;
+  width: 100rpx;
+  height: 100rpx;
   border-radius: 50%;
   font-size: 28rpx;
-  background-color: #00afdb;
+  background-color: #003542;
+  padding: 0px;
+}
+
+.weui-btn-share{
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50rpx;
+  right: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  font-size: 26rpx;
+  background: rgba(0, 0, 0, 0.514);
+  padding: 0px;
 }

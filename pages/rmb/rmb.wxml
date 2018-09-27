@@ -4,31 +4,23 @@
 <view class="container">
   <!-- user -->
   <view class="user" animation="{{animationTitle}}">
-    <view class="title">
-      <view class="caption">
-        <text>转换数字金额为中文大写金额</text>
-      </view>
       <view class="user-number" bindtap="bindShowMask">
+      
         <text class="user-number-tip">{{numStr}}</text>
         <!-- <text class="user-number-str" wx:if="{{mask}}">{{numStr}}</text> -->
          <text class="cursor user-number-str" hidden="{{!mask}}">|</text> 
       </view>
-      <view class="hline" hidden="{{!mask}}"></view>
       <view class="user-chn layout horizontal center" >
         <text class="user-chn-str">{{chnStr}}</text>
         <view class="flex"></view>
         <!-- <image class="icon" src="../../images/stash.png" wx:if="{{chnStr}}" mode="aspectFill"></image>
        <image class="icon" src="../../images/stash_h.png" wx:if="{{!chnStr}}" mode="aspectFill"></image> -->
-       <button bindtap="bindAddToList">暂存</button>
-       <button bindtap='bindCopy'>复制</button>
+       <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" wx:if="{{chnStr}}" bindtap="bindCopy" style='background-color:#0295ba'>复制    </button>
+        <button class='weui-btn-share' wx:if="{{chnStr}}" bindtap='bindAddToList'>暂存</button>
+        <!-- <button open-type="share" class='weui-btn-share'>分享</button> -->
       </view>
-      <view class="weui-btn-area">
-    <button class="weui-btn" type="primary" bindtap="bindCopy" style='background-color:#0295ba'>复制</button>
-    <button class='weui-btn-share'bindtap='bindAddToList'>暂存</button>
-    <!-- <button open-type="share" class='weui-btn-share'>分享</button> -->
-    <!-- <button open-type="share" class='weui-btn-show'>show</button> -->
-  </view>
-    </view>
+      </view>
 
   </view>
   <!-- mask -->
@@ -71,9 +63,9 @@
     <view class="result-list">
       <block wx:for="{{resultList}}" wx:for-item="re" wx:key="{{index+re}}">
         <view class="result-card" style="{{re.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
-          <text class="result-item num">{{re.num}}</text>
-          <text class="result-item chn">{{re.chn}}</text>
-          <text>复制</text>
+          <view class="result-item num">{{re.num}}</view>
+          <view class="result-item chn">{{re.chn}}</view>
+          <view>复制</view>
         </view>
       </block>
     </view>

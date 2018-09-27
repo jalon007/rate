@@ -428,7 +428,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      title: '不服来战~^@^~',
+      title: '好实用的计算小工具~^@^~',
       path: '/pages/salary/rate',
       success: function (res) {
         // 转发成功
