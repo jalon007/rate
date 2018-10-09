@@ -428,8 +428,9 @@ Page({
       console.log(ops.target)
     }
     return {
-      title: '好实用的计算小工具~^@^~',
+      title: '新版税后薪资社保明细一目了然',
       path: '/pages/salary/rate',
+      imageUrl:'/images/rateshare.png',
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
