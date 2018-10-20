@@ -34,13 +34,6 @@
         "selectedIconPath": "images/fang.png",
         "text": "房贷"
       },
-      
-      {
-        "pagePath": "pages/rmb/rmb",
-        "iconPath": "images/rmb_h.png",
-        "selectedIconPath": "images/rmb.png",
-        "text": "人民币"
-      },
       {
         "pagePath": "pages/more/more",
         "iconPath": "images/more_h.png",

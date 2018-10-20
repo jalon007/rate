@@ -20,3 +20,17 @@ height:60rpx;
 width:60rpx;
 display: inline-block;
 }
+.navigator{
+  display:  inline-block;
+
+  margin-left: 20px;
+  border-radius: 40px;
+  background-color: #0288aa;
+}
+.icon-logo {
+height:70rpx;
+width:70rpx;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
