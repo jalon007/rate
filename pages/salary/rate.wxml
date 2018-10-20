@@ -3,7 +3,7 @@
   <view class="weui-cell weui-cell_input">
   <view class="weui-cell__hd">
  <radio-group bindchange="radioCheckedChange"> 
-   <view class="flex_item"><view class="weui-label">起征点</view>
+   <view class="flex_item"><view class="weui-label">基础免征额</view>
     <label class="{{radioCheckVal==0?'active':''}}">3500 
      <radio value="0"  hidden="true"></radio> 
     </label> 
@@ -14,6 +14,14 @@
  </radio-group> 
  </view>
  </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">专项扣除额</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="number" maxlength="5" value="{{zxkc}}" bindblur="changeZxkc" placeholder="请输入专项扣除总额" />
+      </view>
+    </view>
     <view class="weui-cell weui-cell_select">
       <view class="weui-cell__hd weui-cell__hd_in-select-after">
         <view class="weui-label">参保城市</view>

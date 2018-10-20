@@ -14,6 +14,7 @@ Page({
     itemIndex:1,
     radioCheckVal: 1,
     showModal: true,
+    zxkc:'',
     datas: [
       {
         city: "北京",
@@ -344,10 +345,12 @@ Page({
     });
   },
   get_rate: function (xinzi) {
-    if(xinzi<5000){
+    var kc=5000+this.data.zxkc;
+    console.log(kc);
+    if(xinzi<kc){
         return 0;
     }
-    var rate_xinzi = xinzi-5000;
+    var rate_xinzi = xinzi-kc;
     var salary_levels = [3000, 12000, 25000, 35000, 55000, 80000];
     var rate_levels = [0.03, 0.10, 0.2, 0.25, 0.3, 0.35, 0.45];
     var sub_levels = [0, 210, 1410, 2660, 4410, 7160, 15160];
@@ -392,6 +395,10 @@ Page({
     else if (xinzi > gjjmax) this.setData({ gjj: gjjmax });
 
     this.setData({ xinzi: xinzi })
+  },
+  changeZxkc(e) {
+    var zxkc = Number(e.detail.value);
+    this.setData({ zxkc: zxkc })
   },
   changeShebao (e) {
     var shebao = Number(e.detail.value);
