@@ -11,6 +11,6 @@
   <view>
   <view class="more">更多推荐:</view>
   <view class="navigator">
-  <navigator target = "miniProgram" app-id="wxf9f910c8e24ecdd3" path="pages/2048/2048" open-type='navigate'><image class="icon-logo" src="../../images/2048-logo.png" mode="aspectFill"></image></navigator></view>
+  <navigator target = "miniProgram" app-id="wxf9f910c8e24ecdd3" path="pages/index/index" open-type='navigate'><image class="icon-logo" src="../../images/sukodu-logo.png" mode="aspectFill"></image></navigator></view>
   </view>
 
