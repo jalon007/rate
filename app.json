@@ -14,7 +14,10 @@
     "backgroundTextStyle": "black",
     "backgroundColor": "#f8f8f8",
     "navigationBarTitleText": "Finance"
-  }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxf9f910c8e24ecdd3"
+  ]
   ,
   "tabBar": {
     "color": "#dbdbdb",
