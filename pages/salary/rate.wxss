@@ -59,13 +59,15 @@ border: 1rpx solid #0288aa;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 20rpx;
-  right: 20rpx;
-  width: 120rpx;
-  height: 120rpx;
+  top: 200rpx;
+  right: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
   border-radius: 50%;
   font-size: 26rpx;
-  background: rgba(0, 0, 0, 0.514);
+  background: rgba(0, 0, 0, 0.527);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .weui-btn-show{
   color: #ffffff;
@@ -87,13 +89,21 @@ border: 1rpx solid #0288aa;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 20rpx;
-  right: 160rpx;
-  width: 120rpx;
-  height: 120rpx;
+  top: 200rpx;
+  right: 140rpx;
+  width: 80rpx;
+  height: 80rpx;
   border-radius: 50%;
   font-size: 28rpx;
   background-color: #00afdb;
+  font-weight: bold;
+  z-index: 20;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+button {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top:0rpx;
 }
 .table{
   background: #ffffff
@@ -165,4 +175,5 @@ margin-right: 15px;
   background-color: #0288aa;
 border-radius: 36rpx;
 font-size: 15px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
