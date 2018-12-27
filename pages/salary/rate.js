@@ -8,6 +8,7 @@ Page({
     companyTotal: '-',
     total: '-',
     xinzi: '',
+    zxkc: '',
     ynsxinzi:'_',
     grsds: '_',
     shxinzi: '_',
@@ -338,7 +339,7 @@ Page({
       personTotal: this.data.personTotal,
       companyTotal: this.data.companyTotal,
       total: this.data.total,
-      ynsxinzi: ynsxinzi,
+      ynsxinzi: ynsxinzi-this.data.zxkc,
       grsds: rate,
       shxinzi: (ynsxinzi - rate).toFixed(2)
     });
@@ -347,7 +348,7 @@ Page({
     if(xinzi<5000){
         return 0;
     }
-    var rate_xinzi = xinzi-5000;
+    var rate_xinzi = xinzi - 5000 - this.data.zxkc;
     var salary_levels = [3000, 12000, 25000, 35000, 55000, 80000];
     var rate_levels = [0.03, 0.10, 0.2, 0.25, 0.3, 0.35, 0.45];
     var sub_levels = [0, 210, 1410, 2660, 4410, 7160, 15160];
@@ -374,6 +375,10 @@ Page({
       }
     }
     return (rate_xinzi * rate_levels[6]).toFixed(2) - sub_levels[6];
+  },
+  changeZxkc (e) {
+    var zxkc = Number(e.detail.value);
+    this.setData({zxkc: zxkc})
   },
   changeXinzi (e) {
     var shebao = Number(e.detail.value);
